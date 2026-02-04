@@ -44,7 +44,7 @@
     {"id": 19, "category": "cafe", "name": "플레이펫", "feature": "실내동물원 체험", "address": "담양읍 죽향대로 1290", "area": "eup_edge", "url": "https://www.instagram.com/birdmong/", "hours": "", "subcategory": "체험"},
     {"id": 20, "category": "cafe", "name": "아키올로지", "feature": "북카페 컨셉", "address": "월산면 월산리 493-2", "area": "wolsan", "url": "https://www.instagram.com/cafe.archaeology/", "hours": "10:30~21:00", "subcategory": "북카페"},
     {"id": 21, "category": "cafe", "name": "사와로베이커리", "feature": "선인장 컨셉 베이커리", "address": "가사문학면 가사문학로 691", "area": "gasam", "url": "https://www.instagram.com/saguaro_bakery/", "hours": "", "subcategory": "베이커리", "note": "광주호 호수생태원 인근"},
-    {"id": 22, "category": "cafe", "name": "소예르", "feature": "제주 감성 인테리어", "address": "담양읍 남산리 384", "area": "meta", "url": "https://www.instagram.com/cafe.soller/", "hours": "11:00~18:00(목 휴무)", "subcategory": "카페", "note": "메타프로방스 인근"},
+    {"id": 22, "category": "cafe", "name": "소예르", "feature": "제주 감성 인테리어", "address": "담양읍 남산리 384", "area": "meta", "url": "https://naver.me/xJiBlPZ8", "hours": "11:00~18:00(목 휴무)", "subcategory": "카페", "note": "메타프로방스 인근"},
     {"id": 23, "category": "cafe", "name": "명지원", "feature": "한옥 정원형 카페", "address": "고서면 덕촌길 37", "area": "goseo", "url": "https://www.instagram.com/myeong_ji_won/", "hours": "10:00~19:00", "subcategory": "정원카페"},
     {"id": 24, "category": "cafe", "name": "카페리사", "feature": "리조트 내 카페, 추월산 뷰", "address": "용면 추월산로", "area": "yong", "url": "https://www.instagram.com/lisa_forest_village/", "hours": "", "subcategory": "뷰카페"},
     {"id": 25, "category": "cafe", "name": "카페 하녹", "feature": "넓은 잔디마당, 한옥", "address": "창평면 창평현로 714-40", "area": "changpyeong", "url": "https://www.instagram.com/cafe.ha_nok/", "hours": "11:00~19:00(화 휴무)", "subcategory": "한옥카페", "note": "창평 슬로시티 권역"},
@@ -70,9 +70,9 @@
     {"id": 41, "category": "restaurant", "name": "보라반점", "feature": "굴짬뽕 계절메뉴", "address": "담양읍 담주리", "area": "eup", "url": "https://www.diningcode.com/profile.php?rid=ZJOfe1fARHMu", "hours": "09:00~19:30(일 휴무)", "subcategory": "중식"},
     {"id": 42, "category": "restaurant", "name": "유소바", "feature": "자가제면 소바", "address": "담양읍 객사리 206-2", "area": "eup", "url": "", "hours": "11:00~19:00(월 휴무)", "subcategory": "일식"},
 
-    {"id": 43, "category": "activity", "name": "다와", "feature": "아기자기한 소품샵", "address": "담양읍", "area": "eup", "url": "https://www.instagram.com/dawadamyang/", "hours": "", "subcategory": "소품샵", "note": "인스타 휴무 확인 필수"},
-    {"id": 44, "category": "activity", "name": "선나나상점", "feature": "유명 소품샵, 캐릭터 굿즈", "address": "담양읍 객사4길 37-1", "area": "eup", "url": "https://www.instagram.com/s_n_n_store/", "hours": "12:00~18:00(월,화 휴무)", "subcategory": "소품샵"},
-    {"id": 45, "category": "activity", "name": "지피바이브", "feature": "감각적인 편집샵", "address": "담양읍 객사리", "area": "eup", "url": "", "hours": "", "subcategory": "소품샵"},
+    {"id": 43, "category": "activity", "name": "다와", "feature": "아기자기한 소품샵", "address": "담양읍", "area": "eup", "url": "https://www.instagram.com/dawadamyang/", "hours": "", "subcategory": "소품샵", "note": "읍내 집중, 인스타 휴무 확인"},
+    {"id": 44, "category": "activity", "name": "선나나상점", "feature": "유명 소품샵, 캐릭터 굿즈", "address": "담양읍 객사4길 37-1", "area": "eup", "url": "https://www.instagram.com/s_n_n_store/", "hours": "12:00~18:00(월,화 휴무)", "subcategory": "소품샵", "note": "읍내 집중"},
+    {"id": 45, "category": "activity", "name": "지피바이브", "feature": "감각적인 편집샵", "address": "담양읍 객사리", "area": "eup", "url": "", "hours": "", "subcategory": "소품샵", "note": "읍내 집중"},
     {"id": 46, "category": "activity", "name": "그라니타", "feature": "카페+소품, 고양이 3마리", "address": "대전면 신룡길 102-7", "area": "daejeon", "url": "https://www.instagram.com/granita_cafe_damyang", "hours": "11:00~19:00(월 휴무)", "subcategory": "카페소품"}
   ]
 }

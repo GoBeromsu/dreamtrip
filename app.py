@@ -191,6 +191,7 @@ st.markdown("---")
 
 # Shops
 st.markdown("### 🎨 소품샵")
+st.caption("💡 대부분 담양읍내 집중 → 읍내 가면 한번에 해결!")
 
 activity_df = df[df["category"] == "activity"]
 for _, row in activity_df.iterrows():
