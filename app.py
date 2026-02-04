@@ -506,7 +506,7 @@ st.markdown("""
 <div class="section-header">
     <span class="section-icon">🎨</span>
     <h3 class="section-title">소품샵</h3>
-    <span class="section-hint">읍내 집중!</span>
+    <span class="section-hint">읍내에 몰려 있어 편하게 🚶‍♀️</span>
 </div>
 """, unsafe_allow_html=True)
 
