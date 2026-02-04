@@ -24,7 +24,7 @@
     "gasam": {"lat": 35.2800, "lng": 126.9200, "name": "가사문학면"}
   },
   "venues": [
-    {"id": 1, "category": "cafe", "name": "베비에르 담양점", "feature": "마왕파이, 대형 베이커리", "address": "담양읍 죽향대로 1300", "area": "eup_edge", "url": "https://www.instagram.com/verviers_damyang/", "hours": "11:00~20:00", "subcategory": "베이커리", "note": "빵 종류 다양, 아침 픽업 유리"},
+    {"id": 1, "category": "cafe", "name": "베비에르 담양점", "feature": "마왕파이, 대형 베이커리", "address": "담양읍 죽향대로 1300", "area": "eup_edge", "url": "https://naver.me/5N1p0aFM", "hours": "11:00~20:00", "subcategory": "베이커리", "note": "빵 종류 다양, 아침 픽업 유리"},
     {"id": 2, "category": "cafe", "name": "오프더커프", "feature": "비건 소금빵, 대형 로스터리", "address": "대전면 추성1로 425-9", "area": "daejeon", "url": "https://www.instagram.com/offthecuff_cafe/", "hours": "11:00~20:30(LO 20:00)", "subcategory": "소금빵"},
     {"id": 3, "category": "cafe", "name": "카페 버트", "feature": "소금빵 맛집, 붉은 벽돌 외관", "address": "담양읍 추성로 1186", "area": "eup", "url": "https://www.instagram.com/cafe.6ert/", "hours": "11:00~19:00", "subcategory": "소금빵"},
     {"id": 4, "category": "cafe", "name": "카페 더몽", "feature": "매일 아침 굽는 소금빵", "address": "담양읍 천변1길 32", "area": "eup_river", "url": "https://www.instagram.com/cafe_themong/", "hours": "10:30~18:00", "subcategory": "소금빵", "note": "국수거리·관방제림 동선 연계"},
@@ -57,7 +57,11 @@
     {"id": 32, "category": "cafe", "name": "다미담", "feature": "갤러리 카페", "address": "담양읍 담주4길 24-46", "area": "eup_market", "url": "https://triple.guide/restaurants/d98d8415-f0bf-4f90-b616-bc707e221c50", "hours": "11:00~21:00", "subcategory": "갤러리카페", "note": "다미담 예술구 내"},
     {"id": 33, "category": "cafe", "name": "카페 밀", "feature": "대형 베이커리, 소금빵류", "address": "수북면 한수동로 578", "area": "subuk", "url": "https://www.instagram.com/mll_coffee_co/", "hours": "11:00~20:00", "subcategory": "소금빵"},
     {"id": 34, "category": "cafe", "name": "카페 이음", "feature": "시즌별 소금빵 (두바이 등)", "address": "고서면 고읍리 715-1", "area": "goseo", "url": "https://www.instagram.com/eum_cafe_/", "hours": "", "subcategory": "소금빵"},
+    {"id": 50, "category": "cafe", "name": "리핸즈 베이커리 카페", "feature": "새로 오픈, 베이커리", "address": "담양읍", "area": "eup", "url": "https://naver.me/xt4Rs8Uq", "hours": "", "subcategory": "베이커리", "note": "신규 오픈"},
 
+    {"id": 47, "category": "restaurant", "name": "동백 보쌈 칼국수", "feature": "보쌈, 칼국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/GMmNWgk3", "hours": "", "subcategory": "국수"},
+    {"id": 48, "category": "restaurant", "name": "담양 앞집 떡갈비 국수", "feature": "떡갈비 국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/xbA5yrEt", "hours": "", "subcategory": "국수"},
+    {"id": 49, "category": "restaurant", "name": "뚝방국수", "feature": "국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/xKERZbub", "hours": "", "subcategory": "국수"},
     {"id": 37, "category": "restaurant", "name": "황금소나무", "feature": "깔끔한 떡갈비 정식", "address": "담양읍 천변5길 54-4", "area": "eup_river", "url": "https://www.diningcode.com/profile.php?rid=3mm8ZKI4G1b1", "hours": "11:30~20:30(월 휴무)", "subcategory": "떡갈비"},
     {"id": 38, "category": "restaurant", "name": "창평국밥", "feature": "막창전골/국밥 맛집, 웨이팅", "address": "창평면 사동길 12-12", "area": "changpyeong", "url": "https://app.catchtable.co.kr/ct/shop/changpyeong", "hours": "09:00~21:00(화 휴무)", "subcategory": "국밥"},
     {"id": 40, "category": "restaurant", "name": "취향루", "feature": "현지인 추천 중식 (짬뽕)", "address": "무정면 오례리", "area": "mujeong", "url": "https://www.diningcode.com/profile.php?rid=uZn72XjNuBYR", "hours": "11:00~21:00(월 휴무)", "subcategory": "중식"},
