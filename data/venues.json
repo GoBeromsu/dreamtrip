@@ -66,7 +66,7 @@
 
     {"id": 43, "category": "activity", "name": "다와", "feature": "아기자기한 소품샵", "address": "담양읍", "area": "eup", "url": "https://www.instagram.com/dawadamyang/", "hours": "", "subcategory": "소품샵", "note": "읍내 집중, 인스타 휴무 확인"},
     {"id": 44, "category": "activity", "name": "선나나상점", "feature": "유명 소품샵, 캐릭터 굿즈", "address": "담양읍 객사4길 37-1", "area": "eup", "url": "https://www.instagram.com/s_n_n_store/", "hours": "12:00~18:00(월,화 휴무)", "subcategory": "소품샵", "note": "읍내 집중"},
-    {"id": 45, "category": "activity", "name": "지피바이브", "feature": "감각적인 편집샵", "address": "담양읍 객사리", "area": "eup", "url": "", "hours": "", "subcategory": "소품샵", "note": "읍내 집중"},
+    {"id": 45, "category": "activity", "name": "지피바이브", "feature": "감각적인 편집샵", "address": "담양읍 객사리", "area": "eup", "url": "https://m.blog.naver.com/mirmkt/223860676776", "hours": "", "subcategory": "소품샵", "note": "읍내 집중"},
     {"id": 46, "category": "activity", "name": "그라니타", "feature": "카페+소품, 고양이 3마리", "address": "대전면 신룡길 102-7", "area": "daejeon", "url": "https://www.instagram.com/granita_cafe_damyang", "hours": "11:00~19:00(월 휴무)", "subcategory": "카페소품"}
   ]
 }

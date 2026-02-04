@@ -97,6 +97,18 @@ html, body, [class*="css"] {
     align-items: center;
     gap: 0.25rem;
 }
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .legend-bar {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .legend-item {
+        flex: 0 0 45%;
+        justify-content: center;
+    }
+}
 </style>
 """, unsafe_allow_html=True)
 
@@ -203,7 +215,7 @@ for _, row in filtered_df.iterrows():
     ).add_to(m)
 
 # Render map
-st_folium(m, width=None, height=420, use_container_width=True)
+st_folium(m, width=None, height=380, use_container_width=True)
 
 # Legend
 st.markdown("""

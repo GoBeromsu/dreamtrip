@@ -106,7 +106,7 @@ html, body, [class*="css"] {
     display: inline-block;
     background: var(--bamboo);
     color: white;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     font-weight: 600;
     padding: 0.25rem 0.6rem;
     border-radius: 20px;
@@ -184,7 +184,7 @@ html, body, [class*="css"] {
 }
 
 .stat-label {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     color: var(--ink-light);
     margin-top: 0.15rem;
     font-weight: 500;
@@ -243,7 +243,7 @@ html, body, [class*="css"] {
 }
 
 .section-hint {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--bamboo);
     background: rgba(74, 103, 65, 0.1);
     padding: 0.2rem 0.5rem;
@@ -282,12 +282,39 @@ html, body, [class*="css"] {
 
 .venue-tag {
     display: inline-block;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     color: var(--bamboo);
     background: rgba(74, 103, 65, 0.08);
     padding: 0.15rem 0.4rem;
     border-radius: 4px;
     margin-top: 0.35rem;
+}
+
+.venue-card {
+    position: relative;
+}
+
+.venue-link {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--cream);
+    color: var(--wood);
+    border: 1px solid var(--sienna);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.venue-link:hover {
+    background: var(--sienna);
+    color: white;
 }
 
 /* Link Buttons */
@@ -312,6 +339,23 @@ hr {
 /* Caption styling */
 .stCaption {
     color: var(--ink-light) !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .stat-pill {
+        padding: 0.6rem 0.5rem;
+    }
+    .retreat-title {
+        font-size: 1.5rem;
+    }
+    .stLinkButton > a {
+        min-height: 44px;
+        padding: 0.5rem 1rem !important;
+    }
 }
 
 /* Footer */
@@ -420,19 +464,16 @@ restaurant_df = restaurant_df[~restaurant_df["subcategory"].isin(["중식"])]
 for _, row in restaurant_df.iterrows():
     hours_text = f" · {row['hours']}" if row.get('hours') else ""
     note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') else ""
+    link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">→</a>' if row['url'] else ""
 
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        st.markdown(f"""
-        <div class="venue-card">
-            <div class="venue-name">{row['name']}</div>
-            <div class="venue-detail">{row['feature']}{hours_text}</div>
-            {note_tag}
-        </div>
-        """, unsafe_allow_html=True)
-    with col2:
-        if row['url']:
-            st.link_button("→", row['url'], use_container_width=True)
+    st.markdown(f"""
+    <div class="venue-card">
+        {link_html}
+        <div class="venue-name">{row['name']}</div>
+        <div class="venue-detail">{row['feature']}{hours_text}</div>
+        {note_tag}
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -447,19 +488,16 @@ st.markdown("""
 cafe_df = df[df["category"] == "cafe"].head(6)
 for _, row in cafe_df.iterrows():
     note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') else ""
+    link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">→</a>' if row['url'] else ""
 
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        st.markdown(f"""
-        <div class="venue-card">
-            <div class="venue-name">{row['name']}</div>
-            <div class="venue-detail">{row['feature']}</div>
-            {note_tag}
-        </div>
-        """, unsafe_allow_html=True)
-    with col2:
-        if row['url']:
-            st.link_button("→", row['url'], use_container_width=True)
+    st.markdown(f"""
+    <div class="venue-card">
+        {link_html}
+        <div class="venue-name">{row['name']}</div>
+        <div class="venue-detail">{row['feature']}</div>
+        {note_tag}
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -474,17 +512,15 @@ st.markdown("""
 
 activity_df = df[df["category"] == "activity"]
 for _, row in activity_df.iterrows():
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        st.markdown(f"""
-        <div class="venue-card">
-            <div class="venue-name">{row['name']}</div>
-            <div class="venue-detail">{row['feature']}</div>
-        </div>
-        """, unsafe_allow_html=True)
-    with col2:
-        if row['url']:
-            st.link_button("→", row['url'], use_container_width=True)
+    link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">→</a>' if row['url'] else ""
+
+    st.markdown(f"""
+    <div class="venue-card">
+        {link_html}
+        <div class="venue-name">{row['name']}</div>
+        <div class="venue-detail">{row['feature']}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # Footer
 st.markdown("""

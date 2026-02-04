@@ -78,14 +78,14 @@ html, body, [class*="css"] {
 }
 
 .venue-meta {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--bamboo);
     margin-top: 0.3rem;
 }
 
 .category-badge {
     display: inline-block;
-    font-size: 0.65rem;
+    font-size: 0.75rem;
     padding: 0.15rem 0.5rem;
     border-radius: 6px;
     margin-bottom: 0.4rem;
@@ -111,6 +111,33 @@ html, body, [class*="css"] {
 .stTextInput input {
     border-radius: 12px !important;
     border-color: var(--sienna) !important;
+}
+
+.venue-card {
+    position: relative;
+}
+
+.venue-link {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: var(--cream);
+    color: var(--wood);
+    border: 1px solid var(--sienna);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.venue-link:hover {
+    background: var(--sienna);
+    color: white;
 }
 </style>
 """, unsafe_allow_html=True)
@@ -180,20 +207,17 @@ for _, row in filtered.iterrows():
     hours_text = f"🕐 {row['hours']}" if row.get('hours') else ""
     note_text = f"💡 {row['note']}" if row.get('note') else ""
     meta_parts = [p for p in [hours_text, f"📍 {row['distance_km']:.1f}km", note_text] if p]
+    link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">🔗</a>' if row['url'] else ""
 
-    col1, col2 = st.columns([5, 1])
-    with col1:
-        st.markdown(f"""
-        <div class="venue-card">
-            <span class="category-badge {badge_class}">{cat_info['emoji']} {cat_info['label']}</span>
-            <div class="venue-name">{row['name']}</div>
-            <div class="venue-detail">{row['feature']}</div>
-            <div class="venue-meta">{' · '.join(meta_parts)}</div>
-        </div>
-        """, unsafe_allow_html=True)
-    with col2:
-        if row['url']:
-            st.link_button("🔗", row['url'], use_container_width=True)
+    st.markdown(f"""
+    <div class="venue-card">
+        {link_html}
+        <span class="category-badge {badge_class}">{cat_info['emoji']} {cat_info['label']}</span>
+        <div class="venue-name">{row['name']}</div>
+        <div class="venue-detail">{row['feature']}</div>
+        <div class="venue-meta">{' · '.join(meta_parts)}</div>
+    </div>
+    """, unsafe_allow_html=True)
 
 # CSV Download
 st.markdown("---")
