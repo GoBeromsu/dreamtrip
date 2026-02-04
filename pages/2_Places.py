@@ -204,8 +204,8 @@ for _, row in filtered.iterrows():
     cat_info = CATEGORY_INFO.get(cat, {"emoji": "", "label": cat})
     badge_class = cat_colors.get(cat, "cat-cafe")
 
-    hours_text = f"🕐 {row['hours']}" if row.get('hours') else ""
-    note_text = f"💡 {row['note']}" if row.get('note') else ""
+    hours_text = f"🕐 {row['hours']}" if row.get('hours') and str(row.get('hours')) != 'nan' else ""
+    note_text = f"💡 {row['note']}" if row.get('note') and str(row.get('note')) != 'nan' else ""
     meta_parts = [p for p in [hours_text, f"📍 {row['distance_km']:.1f}km", note_text] if p]
     link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">🔗</a>' if row['url'] else ""
 

@@ -463,7 +463,7 @@ restaurant_df = restaurant_df[~restaurant_df["subcategory"].isin(["중식"])]
 
 for _, row in restaurant_df.iterrows():
     hours_text = f" · {row['hours']}" if row.get('hours') else ""
-    note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') else ""
+    note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') and str(row.get('note')) != 'nan' else ""
     link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">→</a>' if row['url'] else ""
 
     st.markdown(f"""
@@ -487,7 +487,7 @@ st.markdown("""
 
 cafe_df = df[df["category"] == "cafe"].head(6)
 for _, row in cafe_df.iterrows():
-    note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') else ""
+    note_tag = f'<span class="venue-tag">💡 {row["note"]}</span>' if row.get('note') and str(row.get('note')) != 'nan' else ""
     link_html = f'<a href="{row["url"]}" target="_blank" class="venue-link">→</a>' if row['url'] else ""
 
     st.markdown(f"""
