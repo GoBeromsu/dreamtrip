@@ -102,12 +102,27 @@ html, body, [class*="css"] {
 
 # Title
 st.markdown('<h1 class="main-title">🚗 담양 리트릿</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-title">2026.02.13~14 · 4인 · 봉산면 숙소 기준</p>', unsafe_allow_html=True)
+st.markdown('<p class="sub-title">2026.02.13~14 · 4인</p>', unsafe_allow_html=True)
 
-# Trip info card
+# Accommodation card - always prominent
 st.markdown("""
-<div class="info-card">
-    <strong>🏡 숙소:</strong> 담양힐링파크 새연리조트<br>
+<div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 12px; padding: 1rem; margin-bottom: 1rem;
+            border-left: 4px solid #f59e0b;">
+    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <span style="font-size: 1.5rem;">🏡</span>
+        <strong style="font-size: 1.1rem;">BASE: 담양힐링파크 새연리조트</strong>
+    </div>
+    <div style="color: #92400e; font-size: 0.85rem;">
+        📍 봉산면 탄금길 9-26<br>
+        🚗 모든 거리는 숙소 기준
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# Schedule info
+st.markdown("""
+<div style="background: #f3f4f6; border-radius: 8px; padding: 0.75rem; margin-bottom: 1rem; font-size: 0.85rem;">
     <strong>🎯 일정:</strong> 체크아웃(11시) → 점심 → 카페 → 소품샵
 </div>
 """, unsafe_allow_html=True)

@@ -29,6 +29,15 @@ if st.button("← 홈으로"):
 
 st.markdown("## 📋 장소 목록")
 
+# Accommodation info - always visible
+st.markdown("""
+<div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-radius: 10px; padding: 0.75rem; margin-bottom: 0.75rem;
+            border-left: 4px solid #f59e0b; font-size: 0.85rem;">
+    <strong>🏡 BASE:</strong> 담양힐링파크 새연리조트 (봉산면) · 거리순 정렬
+</div>
+""", unsafe_allow_html=True)
+
 # Load data
 df = get_venues_df()
 accommodation = get_accommodation()
