@@ -95,11 +95,29 @@ folium.Circle(
     popup="10km",
 ).add_to(m)
 
-# Accommodation marker
+# Accommodation marker - PROMINENT
 folium.Marker(
     location=[accommodation["lat"], accommodation["lng"]],
-    popup=f"🏡 {accommodation['name']}",
+    popup=folium.Popup(
+        f"""<div style="text-align:center; min-width:150px;">
+            <h3 style="margin:0; color:#dc2626;">🏡 BASE</h3>
+            <b>{accommodation['name']}</b><br>
+            <small>{accommodation['address']}</small>
+        </div>""",
+        max_width=200
+    ),
     icon=folium.Icon(color="red", icon="home", prefix="fa"),
+).add_to(m)
+
+# Add pulsing circle around accommodation for visibility
+folium.CircleMarker(
+    location=[accommodation["lat"], accommodation["lng"]],
+    radius=15,
+    color="#dc2626",
+    weight=3,
+    fill=True,
+    fill_color="#fecaca",
+    fill_opacity=0.5,
 ).add_to(m)
 
 # Venue markers
