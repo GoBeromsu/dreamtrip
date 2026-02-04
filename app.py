@@ -132,16 +132,21 @@ from utils.data_loader import get_venues_df, CATEGORY_INFO
 
 df = get_venues_df()
 
-# Stats row
-col1, col2, col3, col4 = st.columns(4)
-with col1:
-    st.metric("전체", f"{len(df)}")
-with col2:
-    st.metric("🍚", f"{len(df[df['category'] == 'restaurant'])}")
-with col3:
-    st.metric("☕", f"{len(df[df['category'] == 'cafe'])}")
-with col4:
-    st.metric("🎨", f"{len(df[df['category'] == 'activity'])}")
+# Stats row - compact for mobile
+total = len(df)
+restaurants = len(df[df['category'] == 'restaurant'])
+cafes = len(df[df['category'] == 'cafe'])
+activities = len(df[df['category'] == 'activity'])
+
+st.markdown(f"""
+<div style="display: flex; justify-content: space-around; text-align: center;
+            background: #f9fafb; border-radius: 10px; padding: 0.75rem; margin-bottom: 1rem;">
+    <div><div style="font-size: 1.25rem; font-weight: 700;">{total}</div><div style="font-size: 0.7rem; color: #6b7280;">전체</div></div>
+    <div><div style="font-size: 1.25rem; font-weight: 700;">🍚 {restaurants}</div><div style="font-size: 0.7rem; color: #6b7280;">식당</div></div>
+    <div><div style="font-size: 1.25rem; font-weight: 700;">☕ {cafes}</div><div style="font-size: 0.7rem; color: #6b7280;">카페</div></div>
+    <div><div style="font-size: 1.25rem; font-weight: 700;">🎨 {activities}</div><div style="font-size: 0.7rem; color: #6b7280;">Activity</div></div>
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("---")
 
