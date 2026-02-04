@@ -58,7 +58,9 @@
     {"id": 33, "category": "cafe", "name": "카페 밀", "feature": "대형 베이커리, 소금빵류", "address": "수북면 한수동로 578", "area": "subuk", "url": "https://www.instagram.com/mll_coffee_co/", "hours": "11:00~20:00", "subcategory": "소금빵"},
     {"id": 34, "category": "cafe", "name": "카페 이음", "feature": "시즌별 소금빵 (두바이 등)", "address": "고서면 고읍리 715-1", "area": "goseo", "url": "https://www.instagram.com/eum_cafe_/", "hours": "", "subcategory": "소금빵"},
     {"id": 50, "category": "cafe", "name": "리핸즈 베이커리 카페", "feature": "새로 오픈, 베이커리", "address": "담양읍", "area": "eup", "url": "https://naver.me/xt4Rs8Uq", "hours": "", "subcategory": "베이커리", "note": "신규 오픈"},
+    {"id": 51, "category": "cafe", "name": "슬담", "feature": "카페", "address": "담양", "area": "eup", "url": "https://naver.me/xQe43RL1", "hours": "", "subcategory": "카페"},
 
+    {"id": 52, "category": "restaurant", "name": "삼거리 농원", "feature": "농원 식당", "address": "담양", "area": "eup", "url": "https://naver.me/xf5MUIbe", "hours": "", "subcategory": "한식"},
     {"id": 47, "category": "restaurant", "name": "동백 보쌈 칼국수", "feature": "보쌈, 칼국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/GMmNWgk3", "hours": "", "subcategory": "국수"},
     {"id": 48, "category": "restaurant", "name": "담양 앞집 떡갈비 국수", "feature": "떡갈비 국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/xbA5yrEt", "hours": "", "subcategory": "국수"},
     {"id": 49, "category": "restaurant", "name": "뚝방국수", "feature": "국수", "address": "담양읍", "area": "eup", "url": "https://naver.me/xKERZbub", "hours": "", "subcategory": "국수"},
